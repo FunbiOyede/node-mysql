@@ -42,7 +42,7 @@ const update_product_name = (req, res) => {
       if (err) {
         res.status(400).json({ error: err });
       }
-      res.status(200).json({ response: results });
+      res.status(200).json({ response: "product name updated" });
     }
   );
 };
@@ -60,7 +60,7 @@ const update_product_price = (req, res) => {
       if (err) {
         res.status(400).json({ error: err });
       }
-      res.status(200).json({ response: results });
+      res.status(200).json({ response: " product price updated" });
     }
   );
 };
@@ -79,15 +79,15 @@ const update_product_description = (req, res) => {
       if (err) {
         res.status(400).json({ error: err });
       }
-      res.status(200).json({ response: results });
+      res.status(200).json({ response: "product description updated" });
     }
   );
 };
 
 /**
  *  @function updates products availablity
- * @param {number} req either 1 or 0
- * @param {*} res
+ * @param {number} req
+ * @param {*} res either 1 or 0
  * @returns {json}
  */
 
@@ -98,7 +98,7 @@ const update_product_status = (req, res) => {
       if (err) {
         res.status(400).json({ error: err });
       }
-      res.status(200).json({ response: results });
+      res.status(200).json({ response: "product availability updated" });
     }
   );
 };
@@ -121,7 +121,7 @@ const create_products = (req, res) => {
     if (err) {
       res.status(400).json({ error: err });
     }
-    res.status(200).json({ response: results });
+    res.status(200).json({ response: "proudct successfully created" });
   });
 };
 
@@ -174,7 +174,7 @@ const delete_all_products = (req, res) => {
     if (err) {
       res.status(500).json({ error: err });
     }
-    res.status(200).json({ response: results });
+    res.status(200).json({ response: "products successfully deleted" });
   });
 };
 
@@ -190,7 +190,7 @@ const delete_by_id = (req, res) => {
       if (err) {
         res.status(400).json({ error: err });
       }
-      res.status(200).json({ response: results });
+      res.status(200).json({ response: "products successfully deleted" });
     }
   );
 };
