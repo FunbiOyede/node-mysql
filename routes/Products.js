@@ -4,7 +4,7 @@ const ProductsController = require("../controllers/controllers");
 // get all products
 Route.get("/products", ProductsController.get_all_products);
 
-//updates product names
+//updates product name
 Route.put("/products/name/:id", ProductsController.update_product_name);
 
 //updates product price
