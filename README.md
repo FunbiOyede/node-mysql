@@ -32,11 +32,11 @@ The API expect the following Parameters: </br>
 `Name` of type string </br>
 `Price` of type string </br>
 `Description` of type string </br>
-`Availabiltity` of type string. This represents the status of the product. If the product is available `Availability = 1` if product isnt available `Availability = 0` </br>
+`Availabiltity` of type string. This represents the status of the product. If the product is available `Availability = 1` if product isn't available `Availability = 0` </br>
 
 ### 4. Using Postman
 
-Make sure post is set to either `x-www-form-urlencoded`
+Make sure post is set to `x-www-form-urlencoded`
 
 ### 5. Endpoints
 
